@@ -87,7 +87,6 @@ form.addEventListener('submit', (e) => {
 });
 
 
-window.localStorage.setItem(submitTasks, div);
 
 
 
