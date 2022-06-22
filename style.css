@@ -1,3 +1,11 @@
+@media only screen and (max-width: 768px) {
+
+    #edit, #submit{
+        color: var(--pink);
+    }
+}
+
+
 :root{
     --dark: #374151;
     --darker: #1f2937;
@@ -13,7 +21,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:  cursive, sans-serif ;
+    font-family:  Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -61,13 +69,13 @@ input, button{
 }
 
 #submit{
-    color: var(--pink);
+    color: var(--purple);
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    /* background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     cursor: pointer;
 }
 
@@ -122,12 +130,12 @@ input, button{
 }
 
 #edit{
-    color: var(--pink);
+    color: var(--purple);
     font-size: 20px;
     font-weight: bold;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    /* background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     cursor: pointer;
     margin-right: 1rem;
 }
