@@ -9,12 +9,24 @@
 </head>
 <body>
    <div class="container">
-        <h1>My To-Do List</h1>
-        <div class="toDo">
-            <input type="text" id="input"><button id="btn"> + </button>
-            <div id="list"></div>
+       <header>
+            <h1>Task List</h1>
+            <form class="toDo">
+                <input type="text" id="input" placeholder="What do you have planned?">
+                <input type="submit" id="submit" value="Add Task">
+            </form>
+       </header>
+        <div class="body">
+            <h2>Tasks</h2>
+           <div id="submitTasks">
+                <!-- <div id="task">
+                    <input type="text" id="list" value="Shut" readonly>
+                    <button id="edit">Edit</button>
+                    <button id="delete">Delete</button>
+                </div> -->
+           </div>
         </div>
-        
+
    </div> 
     <script src="script.js"></script>
 </body>
