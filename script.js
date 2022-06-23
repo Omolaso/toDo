@@ -1,27 +1,44 @@
 
-
-
 const form = document.querySelector('.toDo');
 const input = document.getElementById('input');
 const addTask = document.getElementById('submit');
 const submitTasks = document.getElementById('submitTasks');
 const mode = document.getElementById('mode');
-const container = document.querySelector('.container');
-
-container.style.backgroundColor = 'var(--dark)';
+const container = document.getElementById('container');
+const ground = document.querySelector('.ground');
 
 mode.addEventListener('click', () => {
-    if(container.style.backgroundColor == 'var(--dark)'){
-        container.style.background = 'var(--light)';
+   
+    const contain = document.querySelector('.container');
+    console.log(contain)
+    contain.classList.toggle('ground'); 
+
+    if(mode.innerText == 'Light Mode'){
         mode.style.color = 'var(--dark)';
-        mode.innerText = 'Dark Mode';     
-    }
-    else if(container.style.backgroundColor != 'var(--dark)'){
-        container.style.background = 'var(--dark)';
+        mode.innerText = 'Dark Mode';
+    }else{
         mode.style.color = 'var(--light)';
         mode.innerText = 'Light Mode';
-    };
+    }
 });
+
+
+
+
+
+
+// mode.addEventListener('click', () => {
+//     if(container.style.backgroundColor == 'var(--dark)'){
+//         container.style.background = 'var(--light)';
+//         mode.style.color = 'var(--dark)';
+//         mode.innerText = 'Dark Mode';     
+//     }
+//     else if(container.style.backgroundColor != 'var(--dark)'){
+//         container.style.background = 'var(--dark)';
+//         mode.style.color = 'var(--light)';
+//         mode.innerText = 'Light Mode';
+//     };
+// });
 
 
 form.addEventListener('submit', (e) => {
