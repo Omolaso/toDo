@@ -5,6 +5,24 @@ const form = document.querySelector('.toDo');
 const input = document.getElementById('input');
 const addTask = document.getElementById('submit');
 const submitTasks = document.getElementById('submitTasks');
+const mode = document.getElementById('mode');
+const container = document.querySelector('.container');
+
+container.style.backgroundColor = 'var(--dark)';
+
+mode.addEventListener('click', () => {
+    if(container.style.backgroundColor == 'var(--dark)'){
+        container.style.background = 'var(--light)';
+        mode.style.color = 'var(--dark)';
+        mode.innerText = 'Dark Mode';     
+    }
+    else if(container.style.backgroundColor != 'var(--dark)'){
+        container.style.background = 'var(--dark)';
+        mode.style.color = 'var(--light)';
+        mode.innerText = 'Light Mode';
+    };
+});
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
