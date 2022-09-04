@@ -10,10 +10,10 @@ const ground = document.querySelector('.ground');
 mode.addEventListener('click', () => {
 
     const contain = document.querySelector('.container');
-    console.log(contain)
+    // console.log(contain)
     contain.classList.toggle('ground'); 
 
-    if(mode.innerText == 'Light Mode'){
+    if(mode.innerText === 'Light Mode'){
         mode.style.color = 'var(--dark)';
         mode.innerText = 'Dark Mode';
     }else{
@@ -35,7 +35,10 @@ form.addEventListener('submit', (e) => {
 
     const div = document.createElement('div');
     div.id = 'task';
-    
+
+    // console.log(div);
+
+
     const divContent = document.createElement('div');
     divContent.id = 'content';
 
@@ -95,4 +98,6 @@ form.addEventListener('submit', (e) => {
         alert('Cancelled')
        }
     });
+
+    // window.localStorage.setItem('tasks', `${div.innerText}`)
 });
